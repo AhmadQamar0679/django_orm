@@ -1,5 +1,8 @@
 from django.contrib import admin
-from testapp .models import Student
+from testapp .models import *
 
 # Register your models here.
-admin.site.register(Student)
+
+admin.site.register(Song)
+admin.site.register(Album)
+
