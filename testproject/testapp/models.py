@@ -15,5 +15,9 @@ class Album(models.Model):
 class Song(models.Model):
     name=models.CharField(max_length=100)
     album=models.ForeignKey(Album,on_delete=models.CASCADE)
+    class Meta:
+        ordering=['name']
+
+    
     def __str__(self):
         return self.name
